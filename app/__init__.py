@@ -8,6 +8,7 @@ app = Flask(__name__)
 app.config['DATABASE'] = os.path.join(os.getcwd(), 'flask.sqlite')
 db.init_app(app)
 
+'''-'''
 @app.route('/health')
 def health():
     return render_template('health.html')
