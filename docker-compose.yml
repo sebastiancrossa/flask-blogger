@@ -3,9 +3,9 @@ services:
   web:
     build: .
     ports:
-      - "80:80"
+      - "8085:80"
     restart: always
     env_file:
       - .env
     volumes:
-      - ./flask.sqplite:/flask-blogger/flask.sqlite    
+      - ./flask.sqlite:/flask-blogger/flask.sqlite    
