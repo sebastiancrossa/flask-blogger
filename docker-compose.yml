@@ -8,4 +8,11 @@ services:
     env_file:
       - .env
     volumes:
-      - ./flask.sqlite:/flask-blogger/flask.sqlite    
+      - .:/flask-blogger
+    depends_on:
+      - db
+  db:
+    image: postgres
+    restart: always
+    env_file:
+      - .env
