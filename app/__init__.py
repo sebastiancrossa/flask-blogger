@@ -4,10 +4,6 @@ from werkzeug.security import generate_password_hash
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
-# Not using this for now
-# from . import db
-# from app.db import get_db
-
 app = Flask(__name__)
 
 # Defining our DB URI
